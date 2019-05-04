@@ -33,10 +33,12 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
+
 " もし、未インストールものものがあったらインストール
 if dein#check_install()
   call dein#install()
 endif
+
 
 "*****************************************************************************
 """ Visual Settings
@@ -47,11 +49,11 @@ set t_Co=256
 colorscheme iceberg
 set number
 set ruler
-
-"*****************************************************************************
+"
+""*****************************************************************************
 "" Abbreviations
 "*****************************************************************************
-"" NERDTree
+""" NERDTree
 let g:NERDTreeChDirMode=2
 let g:NERDTreeIgnore=['\.rbc$', '\~$', '\.pyc$', '\.db$', '\.sqlite$', '__pycache__', 'node_modules', 'bower_components']
 let g:NERDTreeSortOrder=['^__\.py$', '\/$', '*', '\.swp$', '\.bak$', '\~$']
@@ -65,4 +67,5 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 nnoremap <silent> <leader>nf :NERDTreeFind<CR>
 noremap <C-n> :NERDTreeToggle<CR>
+
 

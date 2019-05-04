@@ -11,14 +11,11 @@ install() {
   }
 
   if [ -d "$dotfiles" ]; then
-    echo 0
-    #(cd "$dotfiles" && git pull --rebase)
+    (cd "$dotfiles" && git pull --rebase)
   else
-    echo 0
-    #git clone https://github.com/pooseijin/dotfiles "$dotfiles"
+    git clone https://github.com/pooseijin/dotfiles "$dotfiles"
   fi
 
-  echo 1
   symlink "$dotfiles/.vimrc" "$HOME/.vimrc"
   symlink "$dotfiles/.vim" "$HOME/.vim"
   symlink "$dotfiles/.bashrc" "$HOME/.bashrc"

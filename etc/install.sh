@@ -17,6 +17,7 @@ install() {
   fi
 
   symlink "$dotfiles/.vimrc" "$HOME/.vimrc"
+  symlink "$dotfiles/.vim" "$HOME/.vim"
 }
 
 install

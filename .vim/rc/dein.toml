@@ -1,2 +1,7 @@
 [[plugins]]
 repo = 'scrooloose/nerdtree'
+#repo = 'vim-airline/vim-airline'
+#repo = 'vim-airline/vim-airline-themes'
+
+# vim
+repo = 'tpope/vim-fugitive'

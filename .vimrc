@@ -68,5 +68,5 @@ nnoremap <silent> <leader>nf :NERDTreeFind<CR>
 noremap <C-n> :NERDTreeToggle<CR>
 
 "let g:airline_powerline_fonts = 1
-"set laststatus=2
-"let g:airline_theme = 'iceberg'
+"let laststatus=2
+"iet g:airline_theme = 'iceberg'

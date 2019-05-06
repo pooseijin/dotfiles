@@ -6,7 +6,7 @@ jobs:
     steps:
       - run: sudo apt-get update && sudo apt-get -y install git curl
       - checkout
-      - run: bash -c "$(curl -fsSL motohidentaku.com/dot)"
+      - run: bash -c "$(curl -fsSL http://motohidentaku.com/dot/install.sh)"
 #  test:
 #    docker:
 #      - image: circleci/<language>:<version TAG>

@@ -23,6 +23,7 @@ install() {
     do
       [ "$f" = ".git" ] && continue
       [ "$f" = ".cache" ] && continue
+      [ "$f" = ".circleci" ] && continue
       ln -snfv "$dotfiles/$f" "$HOME"/"$f"
   done
 }
